@@ -1,0 +1,12 @@
+{% include header.html %}
+<div id="trabajo" class="container">
+  <h1 class="work">{{page.title}}</h1>
+  <a class="work-meta card" href="{{page.address}}">
+      <small>
+        <i class="icon-link"></i>
+        {{page.address}}
+      </small>
+  </a>
+  {{content}}
+</div>
+{% include footer.html %}

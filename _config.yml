@@ -1,0 +1,4 @@
+permalink: /:categories/:title
+pygments: true
+exclude:
+- README.md

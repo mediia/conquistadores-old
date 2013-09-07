@@ -1,0 +1,21 @@
+---
+layout: home
+title: Trabajos realizados | Pentacorp.
+---
+<!-- flag #3 -->
+<div class="container">
+  <h1 class="work">Links.</h1>
+  <p class="work lead">
+    Ejemplos y diseños de base.
+  </p>
+  <div id="trabajos" class="row">
+      {% for post in site.categories.links %}
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="{{ post.url }}" class="card">
+            <img src="{{ post.image }}" class="img-responsive">
+            <span class="lead">{{ post.title }}</span>
+          </a>
+        </div>
+      {% endfor %}
+  </div>
+</div>
